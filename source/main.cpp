@@ -123,20 +123,7 @@ int main(void) {
     
 
 
-						//spi.mastertx(0, txE, rxE, 8);
 
-/*
-            //transmit ones and log rx buffer into data array 
-            //sensor 1
-            spi.xcvrs[0].csport = gpio::PortB;
-            spi.xcvrs[0].cspin = 5;
-
-            spi.mastertx(0, tx+5, rx, 3);
-            while(spi.xcvrs[0].transmitting);
-            data[0] = rx[2] + (rx[1] << 8) + (rx[0] <<16);
-
-            sendcan(0, data[0]);
-*/
 
 
 /*
@@ -202,7 +189,7 @@ int main(void) {
         if(flag){
 
 
-            //transmit ones and log rx buffer into data array 
+           
             
 
             //transmit ones and log rx buffer into data array 
@@ -214,8 +201,8 @@ int main(void) {
             while(spi.xcvrs[0].transmitting);
             data[0] = rx[2] + (rx[1] << 8) + (rx[0] <<16);
 
-            sendcan(8, data[8]);
-            //transmit ones and log rx buffer into data array 
+            sendcan(0, data[0]);
+          
             
 
             flag = 0;
