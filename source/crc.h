@@ -39,6 +39,11 @@
 /*! \fn       void CrcComputeCrc16()
  *  \brief    CRC_CCITT calculation
  */
-unsigned short int CrcComputeCrc16(unsigned char u8Data, unsigned short int u16CurrCrc);
-
+#ifdef __cplusplus
+extern "C" {
+#endif
+  unsigned short int CrcComputeCrc16(unsigned char u8Data, unsigned short int u16CurrCrc);
+#ifdef __cplusplus
+}
+#endif
 #endif /* CRC_H */

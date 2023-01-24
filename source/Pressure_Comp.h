@@ -31,12 +31,15 @@
 #ifndef PRESSURE_COMP_H
 #define PRESSURE_COMP_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /*
  -------------------------------------------------------------------------------
     Include Files
  -------------------------------------------------------------------------------
  */
-
 
 /*
  -------------------------------------------------------------------------------
@@ -109,5 +112,9 @@ CompReturn_Struct Compensate_Pressure(unsigned long int u32PressureInput,unsigne
  *			  captured at preset pressure state that needs to be output as zero.
  */
 CompStatus_Enum AutoZero_Pressure(unsigned long int u32PressureZero,unsigned long int u32TemperatureZero);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /*! PRESSURE_COMP_H */
