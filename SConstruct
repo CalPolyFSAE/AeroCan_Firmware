@@ -1,11 +1,11 @@
 import os
 
 # !! Update these aths to point to your respective directories !!
-GNU_PATH = '/mnt/c/School/Racing/GNU/bin/'
-BSP_PATH = '/mnt/c/Users/Ryan/Documents/GitHub/MKELibrary/'
+GNU_PATH = '/mnt/c/Users/seppl/Documents/CP_Racing/gcc-arm-none-eabi-10.3-2021.10/bin/'
+BSP_PATH = '../MKELibrary/'
 
 # Change the compiled name of the file below
-compileTarget = 'aero'
+compileTarget = 'main'
 
 # Create Communal build directory to store all the .o's
 VariantDir('build/board', 'board')
